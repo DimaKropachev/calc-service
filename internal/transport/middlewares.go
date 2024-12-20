@@ -20,7 +20,7 @@ func PanicMiddleware(next http.Handler) http.Handler {
 	})
 }
 
-// Middleware для логирования данных о http запросе
+// Middleware для логирования данных о HTTP запросе
 func LoggingMiddleware(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		start := time.Now()

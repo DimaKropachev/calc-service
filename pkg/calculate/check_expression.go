@@ -27,7 +27,7 @@ func CheckExpression(tokens []string) error {
 		trueBrackets  bool
 	)
 
-	// Если выражение пустое сразу возвращаем ошибку
+	// Если выражение, пустое сразу возвращаем ошибку
 	if len(tokens) == 0 {
 		return errors.ErrEmptyExpression
 	}
@@ -39,7 +39,7 @@ func CheckExpression(tokens []string) error {
 		} else if token == ")" {
 			countBrackets--
 		}
-		// если нарушен порядок скобок то добавляем в resultError ошибку об этом
+		// Если нарушен порядок скобок, то добавляем в resultError ошибку об этом
 		if countBrackets < 0 {
 			resultError += fmt.Sprintf("[ERROR] %v\n", errors.ErrBracketsInExpression)
 			break
@@ -78,7 +78,7 @@ func CheckExpression(tokens []string) error {
 			}
 		}
 		if token == "(" {
-			// Если token - открывающая скобка
+			// Если token - открывающаяся скобка
 			// Обнуляем счетчики подряд идущих чисел и математических операций
 			countNum = 0
 			countOper = 0
@@ -99,7 +99,7 @@ func CheckExpression(tokens []string) error {
 				}
 			}
 		} else if token == ")" {
-			// Если token - закрывающая скобка
+			// Если token - закрывающаяся скобка
 			// Обнуляем счетчики подряд идущих чисел и математических операций
 			countNum = 0
 			countOper = 0
@@ -130,18 +130,18 @@ func CheckExpression(tokens []string) error {
 				countNum++
 				countOper = 0
 			} else {
-				// Если token не является ни числом, ни математической операцией, то добавляем в map с ошибками ошибку о неизвестном token-е и индекс данного token-а
+				// Если token не является ни числом, ни математической операцией, то добавляем в map с ошибками, ошибку о неизвестном token-е и индекс данного token-а
 				// Также обнуляем счетчики подряд идущих чисел и математических операций
 				countNum = 0
 				countOper = 0
 				Errors[errors.ErrInvalidToken] = append(Errors[errors.ErrInvalidToken], fmt.Sprintf("%d", i))
 			}
 
-			// Если счетчик подряд идущих чисел равен 2, то добавлем в map с ошибками ошибку об этом и индекс первого подряд идущего token-а
+			// Если счетчик подряд идущих чисел равен 2, то добавлем в map с ошибками, ошибку об этом и индекс первого подряд идущего token-а
 			if countNum == 2 {
 				Errors[errors.ErrIntegersContract] = append(Errors[errors.ErrIntegersContract], fmt.Sprintf("%d", i-1))
 			}
-			// Если счетчик подряд идущих математических операций равен 2, то добавлем в map с ошибками ошибку об этом и индекс первого подряд идущего token-а
+			// Если счетчик подряд идущих математических операций равен 2, то добавлем в map с ошибками, ошибку об этом и индекс первого подряд идущего token-а
 			if countOper == 2 {
 				Errors[errors.ErrOperationsContract] = append(Errors[errors.ErrOperationsContract], fmt.Sprintf("%d", i-1))
 			}
@@ -211,7 +211,7 @@ func CheckBrackets(tokens []string) error {
 	if len(emptyBrackets) > 0 {
 		resultError += fmt.Sprintf("%v, expression[%v]\n", errors.ErrEmptyBracket, strings.Join(emptyBrackets, ","))
 	}
-	// Если resultError не пустая то возвращаем ошибку, иначе nil
+	// Если resultError не пустая, то возвращаем ошибку, иначе nil
 	if resultError != "" {
 		return fmt.Errorf("%v", resultError)
 	}

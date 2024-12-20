@@ -54,7 +54,7 @@ func CalculateHandler(w http.ResponseWriter, r *http.Request) {
 	// В конце обработки запроса закрываем тело запроса
 	defer r.Body.Close()
 
-	// Создаем новый экземпляр структуры expression
+	// Создаем новый экземпляр структуры Expression
 	expression := &Expression{}
 
 	// Распарсиваем JSON данные с выражением в структуру Expression

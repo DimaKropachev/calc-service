@@ -29,7 +29,7 @@ type TestCase struct {
 
 // Функция для теста обработчика CalculateHandler
 func TestCalculateHandler(t *testing.T) {
-	// Отключаем логировагие на время тестов
+	// Отключаем логирование на время тестов
 	oldLog := log.Writer()
 	defer log.SetOutput(oldLog)
 	log.SetOutput(io.Discard)
