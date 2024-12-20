@@ -1,0 +1,339 @@
+2024/12/19 20:11:40 Response:
+Expression is not valid:
+expression = [+ ( - 34 4 ( ) + 23 - * 2 (]
+[ERROR] в выражении неверно расставлены скобки
+[ERROR] выражение не должно начинаться с математической операции, expression[0]
+[ERROR] не допускается использование 2 и более математических операций подряд: expression[9]
+[ERROR] не допускается использование 2 и более чисел подряд: expression[3]
+2024/12/19 20:11:40 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 505.3µs
+
+2024/12/19 20:13:49 Response:
+Expression is not valid:
+expression = [+ ( - 34 4 ( ) + 23 - * 2 (]
+[ERROR] в выражении неверно расставлены скобки
+[ERROR] выражение не должно начинаться с математической операции, expression[0]
+[ERROR] не допускается использование 2 и более математических операций подряд: expression[9]
+[ERROR] не допускается использование 2 и более чисел подряд: expression[3]
+2024/12/19 20:13:49 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:30:56 сервер запущен на порту: 8080
+
+2024/12/19 20:37:50 сервер запущен на порту: 8080
+
+2024/12/19 20:37:57 [ERROR] метод GET не разрешен
+2024/12/19 20:37:57 Request:
+Method: GET
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:38:31 Response:
+Result = 13.000000
+2024/12/19 20:38:31 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:45:37 [ERROR] метод GET не разрешен
+2024/12/19 20:45:37 Request:
+Method: GET
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:47:45 [ERROR] ошибка при распарсивании JSON: invalid character 'i' looking for beginning of value
+2024/12/19 20:47:45 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:47:59 [ERROR] ошибка при распарсивании JSON: unexpected end of JSON input
+2024/12/19 20:47:59 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:48:05 [ERROR] метод GET не разрешен
+2024/12/19 20:48:05 Request:
+Method: GET
+Path: /api/v1/calculate
+Request time: 102.1µs
+
+2024/12/19 20:48:11 [ERROR] ошибка при распарсивании JSON: invalid character 'a' looking for beginning of value
+2024/12/19 20:48:11 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:48:26 [ERROR] ошибка при распарсивании JSON: invalid character 'i' looking for beginning of value
+2024/12/19 20:48:26 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:52:05 Response:
+Result = 17.000000
+2024/12/19 20:52:05 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:52:15 [ERROR] ошибка при распарсивании JSON: json: cannot unmarshal number into Go struct field Expression.expression of type string
+2024/12/19 20:52:15 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:52:19 [ERROR] ошибка при распарсивании JSON: invalid character '}' looking for beginning of value
+2024/12/19 20:52:19 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:52:28 Response:
+Expression is not valid:
+expression is empty
+2024/12/19 20:52:28 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:52:59 [ERROR] ошибка при распарсивании JSON: invalid character '}' looking for beginning of value
+2024/12/19 20:52:59 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 20:54:05 сервер запущен на порту: 8080
+
+2024/12/19 20:54:11 [ERROR] ошибка при распарсивании JSON: invalid character '}' looking for beginning of value
+2024/12/19 20:54:11 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 21:24:12 Сервер запущен на порту: 8080
+
+2024/12/19 21:47:03 [ERROR] ошибка при распарсивании JSON: invalid character '}' looking for beginning of value
+2024/12/19 21:47:03 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 21:47:47 Сервер запущен на порту: 8080
+
+2024/12/19 21:47:52 Response:
+[ERROR] ошибка при распарсивании JSON: invalid character '}' looking for beginning of value
+2024/12/19 21:47:52 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s 
+
+2024/12/19 21:58:22 Response:
+Result = 6.000000
+2024/12/19 21:58:22 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 22:15:33 Response:
+Expression is not valid:
+expression = [+ 2 - 3]
+[ERROR] выражение не должно начинаться с математической операции, expression[0]
+2024/12/19 22:15:33 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/19 22:17:02 Response:
+Expression is not valid:
+expression = [+ 23 ( ) - + ( 34 / ) - 2 -]
+[ERROR] пустая скобка: expression[[2:3]]
+[ERROR] выражение не должно начинаться с математической операции, expression[0]
+[ERROR] выражение не должно заканчиваться математической операцией, expression[12]
+[ERROR] перед закрывающей скобкой одидалось число: expression[9]
+[ERROR] не допускается использование 2 и более математических операций подряд: expression[4]
+2024/12/19 22:17:02 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 504.1µs
+
+2024/12/19 22:41:58 Response:
+Expression is not valid:
+expression = [2 + - ( - 3 / ) 3 23]
+[ERROR] после открывающейся скобки ожидалось число: expression[3]
+[ERROR] перед закрывающей скобкой одидалось число: expression[7]
+[ERROR] после закрываюшейся скобки ожидалась математическая операция: expression[7]
+[ERROR] не допускается использование 2 и более математических операций подряд: expression[1]
+[ERROR] не допускается использование 2 и более чисел подряд: expression[8]
+2024/12/19 22:41:58 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 1.5462ms
+
+2024/12/19 22:46:17 Response:
+Expression is not valid:
+expression = [2 + ( ) - 3 -]
+[ERROR] пустая скобка: expression[[2:3]]
+[ERROR] выражение не должно заканчиваться математической операцией, expression[6]
+2024/12/19 22:46:17 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 18:58:52 Сервер запущен на порту: 8080
+
+2024/12/20 19:00:28 Response:
+Expression is not valid:
+expression = [1 / 2 + 12 - 3 ( * 8 ) -]
+[ERROR] выражение не должно заканчиваться математической операцией, expression[11]
+[ERROR] перед открывающейся скобкой ожидалась математическая операция: expression[7]
+[ERROR] после открывающейся скобки ожидалось число: expression[7]
+2024/12/20 19:00:28 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 19:33:15 Responce:
+[ERROR] метод GET не разрешен
+2024/12/20 19:33:15 Request:
+Method: GET
+Path: /api/v1/calculate
+Request time: 4.8922ms
+
+2024/12/20 19:33:22 Response:
+Expression is not valid:
+expression = [1 / 2 + 12 - 3 ( * 8 ) -]
+[ERROR] выражение не должно заканчиваться математической операцией, expression[11]
+[ERROR] перед открывающейся скобкой ожидалась математическая операция: expression[7]
+[ERROR] после открывающейся скобки ожидалось число: expression[7]
+2024/12/20 19:33:22 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 19:50:58 Response:
+Expression is not valid:
+expression = [1 / 2 + 12 - 3 ( * 8 ) -]
+[ERROR] выражение не должно заканчиваться математической операцией, expression[11]
+[ERROR] перед открывающейся скобкой ожидалась математическая операция: expression[7]
+[ERROR] после открывающейся скобки ожидалось число: expression[7]
+2024/12/20 19:50:58 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 20:41:43 Response:
+Result = 13.000000
+2024/12/20 20:41:43 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 16.0393ms
+
+2024/12/20 20:42:24 Responce:
+[ERROR] метод GET не разрешен
+2024/12/20 20:42:24 Request:
+Method: GET
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 20:43:43 Response:
+[ERROR] ошибка при распарсивании JSON: invalid character '}' looking for beginning of value
+2024/12/20 20:43:43 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 20:44:27 Response:
+[ERROR] ошибка при распарсивании JSON: unexpected end of JSON input
+2024/12/20 20:44:27 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 20:44:47 Response:
+Expression is not valid:
+expression = [* 2 + 3 ( ) +]
+[ERROR] пустая скобка: expression[[4:5]]
+[ERROR] выражение не должно начинаться с математической операции, expression[0]
+[ERROR] выражение не должно заканчиваться математической операцией, expression[6]
+2024/12/20 20:44:47 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 21:19:33 Response:
+[ERROR] ошибка при распарсивании JSON: invalid character '}' looking for beginning of value
+2024/12/20 21:19:33 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 4.7005ms
+
+2024/12/20 21:20:49 Response:
+Result = 6.000000
+2024/12/20 21:20:49 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 21:22:44 Response:
+Expression is not valid:
+expression = [2 + - ( - 3 / ) 3 23]
+[ERROR] не допускается использование 2 и более математических операций подряд: expression[1]
+[ERROR] не допускается использование 2 и более чисел подряд: expression[8]
+[ERROR] после открывающейся скобки ожидалось число: expression[3]
+[ERROR] перед закрывающей скобкой одидалось число: expression[7]
+[ERROR] после закрываюшейся скобки ожидалась математическая операция: expression[7]
+2024/12/20 21:22:44 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 21:23:44 Response:
+Expression is not valid:
+expression = [2 + ( ) - 3 -]
+[ERROR] пустая скобка: expression[[2:3]]
+[ERROR] выражение не должно заканчиваться математической операцией, expression[6]
+2024/12/20 21:23:44 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 21:24:18 Response:
+Expression is not valid:
+expression = [2 + ( ) - 3 -]
+[ERROR] пустая скобка: expression[[2:3]]
+[ERROR] выражение не должно заканчиваться математической операцией, expression[6]
+2024/12/20 21:24:18 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 21:25:45 Сервер запущен на порту: 8080
+
+2024/12/20 21:25:51 Response:
+Expression is not valid:
+expression = [2 + ( ) - 3 -]
+[ERROR] пустая скобка: expression[[2:3]]
+[ERROR] выражение не должно заканчиваться математической операцией, expression[6]
+2024/12/20 21:25:51 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
+2024/12/20 21:26:34 Сервер запущен на порту: 8080
+
+2024/12/20 21:26:39 Response:
+Expression is not valid:
+expression = [2 + ( ) - 3 -]
+[ERROR] пустая скобка, expression[[2:3]]
+[ERROR] выражение не должно заканчиваться математической операцией, expression[6]
+2024/12/20 21:26:39 Request:
+Method: POST
+Path: /api/v1/calculate
+Request time: 0s
+
