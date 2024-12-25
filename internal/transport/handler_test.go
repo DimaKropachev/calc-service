@@ -72,7 +72,7 @@ func TestCalculateHandler(t *testing.T) {
 			},
 			Resp: &Response{
 				StatusCode: http.StatusBadRequest,
-				Result:     "{\"error\":\"Неверный формат JSON\"}",
+				Result:     "{\"error\":\"Invalid JSON format\"}",
 			},
 		},
 	}
